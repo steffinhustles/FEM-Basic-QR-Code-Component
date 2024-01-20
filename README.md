@@ -24,8 +24,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### Links
 
 - Solution URL: [Github](https://github.com/steffinhustles/FEM-Basic-QR-Code-Component)
-- Live Site URL: [Codepen](https://codepen.io/steffin_hustles/pen/YzgVbbb)
-
+- Live Site URL: [Codepen](https://codepen.io/steffin_hustles/pen/YzgVbbb) [Vercel](https://fem-basic-qr-code-component.vercel.app/)
 ## My process
 
 Since this is a basic component, I chose to get it built on codepen and then import the file here for submision purpose.
