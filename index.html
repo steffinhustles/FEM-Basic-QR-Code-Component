@@ -1,101 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Solutions</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍉</text></svg>">
+    <style>
+        @import url(https://fonts.googleapis.com/css2?family=Raleway);
+        * {
+            font-family: "Raleway", sans-serif;
+            background-color: #f9f6f4;
+        }
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
-  <title>Frontend Mentor | QR code component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    /* Outfit font */
-    @import url(https://fonts.googleapis.com/css?family=Outfit:700);
-    @import url(https://fonts.googleapis.com/css?family=Outfit:400);
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-
-
-    * {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      font-family: Outfit, sans-serif;
-      text-align: center;
-    }
-
-    .container,
-    .attribution {
-      background-color: hsl(212, 45%, 89%);
-    }
-
-    .container {
-      display: flex;
-      width: 100vw;
-      height: 100vh;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .card {
-      display: flex;
-      flex-direction: column;
-      width: 350px;
-      padding: 1em;
-      background: hsl(0, 0%, 100%);
-      border-radius: 1em;
-      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    }
-
-    img {
-      border-radius: 1em;
-      /*   margin: 1em; */
-    }
-
-    h2 {
-      font-weight: 700;
-      font-weight: bold;
-      text: center;
-      margin: 1em;
-    }
-
-    p {
-      font-weight: 400;
-      color: hsl(220, 15%, 55%);
-      margin: 2em;
-      margin-top: 0;
-    }
-  </style>
+        .container {
+            display: flex;
+            overflow: auto;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: flex-start;
+            width: 98vw;
+            min-height: 80vh;
+        }
+        header {
+            text-align: center;
+            margin: 2em 0;
+        }
+        h2 {
+            margin: 0;
+            padding: 0;
+        }
+        p {
+            color: #999;
+            font-size: 0.8em;
+            line-height: 1.5em;
+        }
+        a{
+            background-color: #157241;
+            color:#75b855;
+            text-decoration: none;
+            padding: 3px;
+            border-radius: 5px;
+            &:hover{
+                background-color: #db6161;
+                color:#000;
+                border: 3px solid #157241;
+                padding: 0;
+            }
+        }
+        .card {
+            width: 350px;
+            border-radius: 1em;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+            margin: 1em;
+            transition: transform 0.2s ease-in-out;
+            >img {
+                width: 100%;
+                border-radius: 1em 1em 0 0;
+            }
+            >.content {
+                padding: 1em;
+            }
+            .tags {
+                display: flex;
+                flex-wrap: wrap;
+                >span {
+                    text-align: center;
+                    border-radius: 5px;
+                    border: 1px solid;
+                    margin-right: 5px;
+                    font-weight: 800;
+                    padding: 3px 4px;
+                    margin-bottom: 5px;
+                    &.html {
+                        border-color: blue;
+                        color: blue;
+                        &:before {
+                            content: "HTML";
+                        }
+                    }
+                    &.css {
+                        border-color: green;
+                        color: green;
+                        &:before {
+                            content: "CSS";
+                        }
+                    }
+                    &.js {
+                        border-color: orange;
+                        color: orange;
+                        &:before {
+                            content: "JS";
+                        }
+                    }
+                }
+                >div {
+                    text-align: center;
+                    border-radius: 5px;
+                    border: 1px solid;
+                    margin-right: 1em;
+                    font-weight: bold;
+                    padding: 3px 5px;
+                    margin-bottom: 5px;
+                    text-transform: uppercase;
+                    &:before {
+                        width: 10%;
+                        color: white;
+                    }
+                    &:after {
+                        padding-left: 2px;
+                        width: 100%;
+                    }
+                    &.newbie {
+                        color: rgb(106, 190, 205);
+                        background: linear-gradient(to right,
+                                rgb(106, 190, 205) 15px,
+                                white 15px);
+                        &:before {
+                            content: "1 ";
+                        }
+                        &:after {
+                            content: "newbie";
+                        }
+                    }
+                    &.junior {
+                        color: rgb(170, 215, 66);
+                        background: linear-gradient(to right,
+                                rgb(170, 215, 66) 15px,
+                                white 15px);
+                        &:before {
+                            content: "2 ";
+                        }
+                        &:after {
+                            content: "junior";
+                        }
+                    }
+                    &.intermediate {
+                        color: rgb(241, 182, 4);
+                        background: linear-gradient(to right,
+                                rgb(241, 182, 4) 18px,
+                                white 18px);
+                        &:before {
+                            content: "3 ";
+                        }
+                        &:after {
+                            content: "intermediate";
+                        }
+                    }
+                    &.advanced {
+                        color: rgb(244, 137, 37);
+                        background: linear-gradient(to right,
+                                rgb(244, 137, 37) 18px,
+                                white 18px);
+                        &:before {
+                            content: "4 ";
+                        }
+                        &:after {
+                            content: "advanced";
+                        }
+                    }
+                    &.guru {
+                        color: rgb(237, 44, 73);
+                        background: linear-gradient(to right,
+                                rgb(237, 44, 73) 18px,
+                                white 18px);
+                        &:before {
+                            content: "5 ";
+                        }
+                        &:after {
+                            content: "guru";
+                        }
+                    }
+                }
+            }
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    </style>
 </head>
-
 <body>
+    <header>
+        <h1><a href="https://www.frontendmentor.io/challenges">Frontend Mentor</a> Submissions</h1>
+        <h4>Steffin</h4>
+    </header>
+    <div class="container"></div>
+    <script>
+        data = [
+            {
+                "img":
+                    "https://www.frontendmentor.io/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdz209s6jk%2Fimage%2Fupload%2Fv1642681176%2FChallenges%2Fqh97gysgjrzqyqlig2al.jpg&w=828&q=75",
+                "header": "QR code component",
+                "description":
+                    "A perfect first challenge if you're new to HTML and CSS. The card layout doesn't shift, so it's ideal if you haven't learned about building responsive layouts yet.",
+                "tools": ["HTML", "CSS"],
+                "level": "newbie",
+                "link":"/QRCode"
+            }
+        ]
+        console.log("sdf")
+        console.log(data)
+        function populateCards(data) {
+            const container = document.querySelector(".container");
+            data.forEach((item) => {
+                const card = document.createElement("div");
+                card.classList.add("card");
+                const img = document.createElement("img");
+                img.src = item.img;
+                img.alt = "";
+                const content = document.createElement("div");
+                content.classList.add("content");
+                const headerLink = document.createElement('a');
+                headerLink.href = item.link;
+                headerLink.textContent = item.header;
+                const header = document.createElement("h2");
+                header.classList.add("header");
+                const description = document.createElement("p");
+                description.classList.add("description");
+                description.textContent = item.description;
+                const tags = document.createElement("div");
+                tags.classList.add("tags");
+                item.tools.forEach((tool) => {
+                    const span = document.createElement("span");
+                    span.textContent = tool;
+                    tags.appendChild(span);
+                });
+                const newbie = document.createElement("div");
+                newbie.classList.add(item.level);
 
-  <div class="container">
-
-    <div class="card">
-      <!-- <img src="https://i.ibb.co/q1pCfMM/image-qr-code.png" alt="image-qr-code"> -->
-      <img src="images/image-qr-code.png" alt="image-qr-code">
-      <h2><b>Improve your front-end skills by building projects</b></h2>
-      <p>
-        Scan the QR code to visit Frontend Mentor and take your coding skills to the next level.
-      </p>
-    </div>
-  </div>
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Steffin</a>.
-  </div> -->
-
-
+                header.appendChild(headerLink);
+                content.appendChild(header);
+                content.appendChild(description);
+                content.appendChild(tags);
+                tags.appendChild(newbie);
+                card.appendChild(img);
+                card.appendChild(content);
+                container.appendChild(card);
+            });
+        }
+        populateCards(data);
+    </script>
 </body>
-
 </html>
