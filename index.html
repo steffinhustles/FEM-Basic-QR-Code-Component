@@ -17,10 +17,10 @@
             display: flex;
             overflow: auto;
             flex-wrap: wrap;
-            justify-content: space-around;
             align-content: flex-start;
             width: 98vw;
             min-height: 80vh;
+            justify-content: center;
         }
         header {
             text-align: center;
@@ -53,7 +53,7 @@
             border-radius: 1em;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
             margin: 1em;
-            transition: transform 0.2s ease-in-out;
+transition: transform 0.2s ease-in-out;
             >img {
                 width: 100%;
                 border-radius: 1em 1em 0 0;
@@ -173,7 +173,7 @@
                     }
                 }
             }
-            &:hover {
+&:hover {
                 transform: scale(1.05);
             }
         }
@@ -196,6 +196,15 @@
                 "tools": ["HTML", "CSS"],
                 "level": "newbie",
                 "link":"/QRCode"
+            },{
+                "img":
+                    "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/sogk9gtrzrmsf2rzcj63.jpg",
+                "header": "Recipe page",
+                "description":
+                    "This challenge will help you focus on writing semantic HTML. Ensure you think through what HTML elements are most appropriate for each piece of content.",
+                "tools": ["HTML", "CSS"],
+                "level": "newbie",
+                "link":"/RecipePage"
             }
         ]
         console.log("sdf")
