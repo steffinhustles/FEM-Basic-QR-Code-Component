@@ -21,8 +21,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Github](https://github.com/steffinhustles/FEM-Solutions/tree/main/QRCode)
-- Live Site URL: [Codepen](https://codepen.io/steffin_hustles/pen/vYPZRYw) [Vercel](https://fem-solutions.vercel.app/QRCode)
+- Solution URL: [Github](https://github.com/steffinhustles/FEM-Solutions/tree/main/RecipePage)
+- Live Site URL: [Codepen](https://codepen.io/steffin_hustles/pen/vYPZRYw) [Vercel](https://fem-solutions.vercel.app/RecipePage)
 ## My process
 
 I didn't do mobile first development. Maybe I should try that the next time.
