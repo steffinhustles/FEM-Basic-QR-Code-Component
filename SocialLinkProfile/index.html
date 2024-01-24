@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --white: hsl(0, 0%, 100%);
+      --grey: hsl(0, 0%, 20%);
+      --darkgrey: hsl(0, 0%, 12%);
+      --offblack: hsl(0, 0%, 8%);
+      --green: hsl(75, 94%, 57%);
+    }
+
+    body {
+      font-family: "Inter", serif;
+      color: var(--white);
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      min-height: 100vh;
+      background-color: var(--offblack);
+
+      .card {
+        background-color: var(--darkgrey);
+        min-width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1em;
+        padding: 1em 1em;
+
+        .avatar {
+          border-radius: 100%;
+          padding-top: 1em;
+          width: 100px;
+        }
+
+        .name {
+          font-size: 1.8em;
+          padding: 1em;
+          padding-bottom: .5em;
+          font-weight: 400;
+        }
+
+        .location {
+          font-size: 1em;
+          padding-bottom: 2.5em;
+          color: var(--green);
+          font-weight: 600;
+        }
+
+        .caption {
+          font-weight: 200;
+          font-size: 1em;
+          padding-bottom: 2em;
+        }
+
+        >ul {
+          width: 100%;
+
+          >li {
+            width: calc(100%-2em);
+            background-color: var(--grey);
+            text-align: center;
+            padding: 1em;
+            margin: 1em;
+            border-radius: .5em;
+            font-weight: 600;
+            &:hover{
+              color:var(--offblack);
+              background-color: var(--green);
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="card">
+      <img src="https://i.ibb.co/3MF2qT0/avatar-jessica.jpg" alt="Avatar" class="avatar">
+      <h1 class="name">Jessica Randall</h1>
+      <h4 class="location">London, United Kingdom</h4>
+      <h4 class="caption">"Front-end developer and avid reader."</h4>
+      <ul class="links">
+        <li>Github</li>
+        <li>Frontend Mentor</li>
+        <li>LinkedIn</li>
+        <li>Twitter</li>
+        <li>Instagram</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
