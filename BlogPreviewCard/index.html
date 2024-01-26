@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root{
+      --yellow:hsl(47, 88%, 63%);
+      --white:hsl(0, 0%, 100%);
+      --grey:hsl(0, 0%, 50%);
+      --black:hsl(0, 0%, 7%);
+    }
+    body{font-family: Figtree, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 16px;}
+    .container{
+      display:flex;
+      justify-content: center;
+      align-items:center;
+      min-height:100vh;
+      background-color: var(--yellow);
+    }
+    .card{
+      width:20em;
+      border: 1px solid black;
+      border-radius:1em;
+      background-color: var(--white);
+      box-shadow: 15px 15px ;
+      padding: 1.2em;
+      >img{
+        border-radius:1em;
+        width: 20em;
+      }
+      .tag{
+        background-color: var(--yellow);
+        display: inline-block;
+        padding: .5em .8em;
+        margin: 1em 0;
+        border-radius:5px;
+        font-weight: 900;
+        font-size: .8em;
+      }
+      .date{
+        font-weight: 500;
+        font-size: .8em;
+      }
+      .heading{
+        font-weight: 700;
+        font-size: 1.4em;
+        padding: 1em 0;
+        &:hover{
+          color: var(--yellow);
+          cursor: pointer;
+        }
+      }
+      .caption{
+        font-size: 1em;
+        color:var(--grey);
+        line-height: 1.5em;
+        
+      }
+      .author{
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        margin: 1em 0;
+        margin-bottom: 0;
+        >img{
+          width: 2em;
+        }
+        >p{
+          font-weight: 900;
+          font-size: .8em;
+        }
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <img src="./assets/images/illustration-article.svg" alt="" class="banner">
+      <div class="tag">Learning</div>
+      <div class="date">Published 21 Dec 2023</div>
+      <h1 class="heading">HTML & CSS foundations</h1>
+      <p class="caption">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      <div class="author">
+        <img src="https://i.ibb.co/WfVpY4w/image-avatar.webp" alt="avatar" class="avatar">
+        <p class="name">Greg Hooper</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
