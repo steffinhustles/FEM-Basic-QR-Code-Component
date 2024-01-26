@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍉</text></svg>">
     <style>
         @import url(https://fonts.googleapis.com/css2?family=Raleway);
+
         * {
             font-family: "Raleway", sans-serif;
             background-color: #f9f6f4;
@@ -22,48 +24,58 @@
             min-height: 80vh;
             justify-content: center;
         }
+
         header {
             text-align: center;
             margin: 2em 0;
         }
+
         h2 {
             margin: 0;
             padding: 0;
         }
+
         p {
             color: #999;
             font-size: 0.8em;
             line-height: 1.5em;
         }
-        a{
-            background-color: #157241;
-            color:#75b855;
+
+        a {
+            /* background-color: #157241;
+            color: #75b855; */
             text-decoration: none;
             padding: 3px;
             border-radius: 5px;
-            &:hover{
-                background-color: #db6161;
-                color:#000;
+
+            &:hover {
+                /* background-color: #db6161;
+                color: #000;
                 border: 3px solid #157241;
-                padding: 0;
+                padding: 0; */
             }
         }
+
         .card {
             width: 350px;
             border-radius: 1em;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
             margin: 1em;
-transition: transform 0.2s ease-in-out;
+            transition: transform 0.2s ease-in-out;
+
             >img {
                 width: 100%;
                 border-radius: 1em 1em 0 0;
             }
+
             >.content {
                 padding: 1em;
             }
+
             .tags {
                 display: flex;
                 flex-wrap: wrap;
+
                 >span {
                     text-align: center;
                     border-radius: 5px;
@@ -72,28 +84,35 @@ transition: transform 0.2s ease-in-out;
                     font-weight: 800;
                     padding: 3px 4px;
                     margin-bottom: 5px;
+
                     &.html {
                         border-color: blue;
                         color: blue;
+
                         &:before {
                             content: "HTML";
                         }
                     }
+
                     &.css {
                         border-color: green;
                         color: green;
+
                         &:before {
                             content: "CSS";
                         }
                     }
+
                     &.js {
                         border-color: orange;
                         color: orange;
+
                         &:before {
                             content: "JS";
                         }
                     }
                 }
+
                 >div {
                     text-align: center;
                     border-radius: 5px;
@@ -103,82 +122,101 @@ transition: transform 0.2s ease-in-out;
                     padding: 3px 5px;
                     margin-bottom: 5px;
                     text-transform: uppercase;
+
                     &:before {
                         width: 10%;
                         color: white;
                     }
+
                     &:after {
                         padding-left: 2px;
                         width: 100%;
                     }
+
                     &.newbie {
                         color: rgb(106, 190, 205);
                         background: linear-gradient(to right,
                                 rgb(106, 190, 205) 15px,
                                 white 15px);
+
                         &:before {
                             content: "1 ";
                         }
+
                         &:after {
                             content: "newbie";
                         }
                     }
+
                     &.junior {
                         color: rgb(170, 215, 66);
                         background: linear-gradient(to right,
                                 rgb(170, 215, 66) 15px,
                                 white 15px);
+
                         &:before {
                             content: "2 ";
                         }
+
                         &:after {
                             content: "junior";
                         }
                     }
+
                     &.intermediate {
                         color: rgb(241, 182, 4);
                         background: linear-gradient(to right,
                                 rgb(241, 182, 4) 18px,
                                 white 18px);
+
                         &:before {
                             content: "3 ";
                         }
+
                         &:after {
                             content: "intermediate";
                         }
                     }
+
                     &.advanced {
                         color: rgb(244, 137, 37);
                         background: linear-gradient(to right,
                                 rgb(244, 137, 37) 18px,
                                 white 18px);
+
                         &:before {
                             content: "4 ";
                         }
+
                         &:after {
                             content: "advanced";
                         }
                     }
+
                     &.guru {
                         color: rgb(237, 44, 73);
                         background: linear-gradient(to right,
                                 rgb(237, 44, 73) 18px,
                                 white 18px);
+
                         &:before {
                             content: "5 ";
                         }
+
                         &:after {
                             content: "guru";
                         }
                     }
                 }
             }
-&:hover {
+
+            &:hover {
                 transform: scale(1.05);
             }
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1><a href="https://www.frontendmentor.io/challenges">Frontend Mentor</a> Submissions</h1>
@@ -195,8 +233,8 @@ transition: transform 0.2s ease-in-out;
                     "A perfect first challenge if you're new to HTML and CSS. The card layout doesn't shift, so it's ideal if you haven't learned about building responsive layouts yet.",
                 "tools": ["HTML", "CSS"],
                 "level": "newbie",
-                "link":"/QRCode"
-            },{
+                "link": "/QRCode"
+            }, {
                 "img":
                     "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/sogk9gtrzrmsf2rzcj63.jpg",
                 "header": "Recipe page",
@@ -204,8 +242,8 @@ transition: transform 0.2s ease-in-out;
                     "This challenge will help you focus on writing semantic HTML. Ensure you think through what HTML elements are most appropriate for each piece of content.",
                 "tools": ["HTML", "CSS"],
                 "level": "newbie",
-                "link":"/RecipePage"
-            },{
+                "link": "/RecipePage"
+            }, {
                 "img":
                     "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/sfsa14rwjz0wp7lzel2x.jpg",
                 "header": "Social Link Profile page",
@@ -213,8 +251,8 @@ transition: transform 0.2s ease-in-out;
                     "In this small project, you'll build out your social link-sharing profile. You can even personalize it and use it to share all your social profiles!",
                 "tools": ["HTML", "CSS"],
                 "level": "newbie",
-                "link":"/SocialLinkProfile"
-            },{
+                "link": "/SocialLinkProfile"
+            }, {
                 "img":
                     "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/kaiwxzdh90xhbdwsstvl.jpg",
                 "header": "Blog preview card",
@@ -222,7 +260,7 @@ transition: transform 0.2s ease-in-out;
                     "This HTML & CSS-only challenge is a perfect project for beginners getting up to speed with HTML and CSS fundamentals, like HTML structure and the box model.",
                 "tools": ["HTML", "CSS"],
                 "level": "newbie",
-                "link":"/BlogPreviewCard"
+                "link": "/BlogPreviewCard"
             }
         ]
         console.log("sdf")
@@ -268,4 +306,5 @@ transition: transform 0.2s ease-in-out;
         populateCards(data);
     </script>
 </body>
+
 </html>
